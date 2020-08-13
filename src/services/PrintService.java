@@ -5,9 +5,9 @@ import java.util.List;
 
 public class PrintService {
 
-    List<Integer> list = new ArrayList<>();
+    List<Object> list = new ArrayList<>();
 
-    public void addValue(Integer value) {
+    public void addValue(Object value) {
         list.add(value);
     }
 
@@ -15,7 +15,7 @@ public class PrintService {
         System.out.println(list.toString());
     }
 
-    public Integer first() {
+    public Object first() {
         if (list.isEmpty()) {
             throw new IllegalStateException("List is empty");
         }
